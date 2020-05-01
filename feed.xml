@@ -1,0 +1,208 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<rss version="2.0" xmlns:atom="http://www.w3.org/2005/Atom">
+  <channel>
+    <title>Branden Stone</title>
+    <description>Website for Branden Stone, Visiting Assistant Professor of Mathematics at Hamilton College. Research interests are in Commutative Algebra,  Macaulay2, and various programming projects. 
+</description>
+    <link>http://localhost:4000/bstone/</link>
+    <atom:link href="http://localhost:4000/bstone/feed.xml" rel="self" type="application/rss+xml" />
+    <pubDate>Tue, 12 Nov 2019 12:46:39 -0500</pubDate>
+    <lastBuildDate>Tue, 12 Nov 2019 12:46:39 -0500</lastBuildDate>
+    <generator>Jekyll v3.8.6</generator>
+    
+      <item>
+        <title>Homework 10</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;No new readings&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 06 May 2106 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/bstone/teaching/math390/graph-theory/hw-problems/2106/05/06/hw10.html</link>
+        <guid isPermaLink="true">http://localhost:4000/bstone/teaching/math390/graph-theory/hw-problems/2106/05/06/hw10.html</guid>
+        
+        <category>math390sp16</category>
+        
+        
+        <category>teaching</category>
+        
+        <category>math390</category>
+        
+        <category>graph-theory</category>
+        
+        <category>hw-problems</category>
+        
+      </item>
+    
+      <item>
+        <title>Homework 10</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;No new readings&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 06 May 2106 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/bstone/teaching/math351/hw-problems/2106/05/06/hw10.html</link>
+        <guid isPermaLink="true">http://localhost:4000/bstone/teaching/math351/hw-problems/2106/05/06/hw10.html</guid>
+        
+        <category>math390sp16</category>
+        
+        
+        <category>teaching</category>
+        
+        <category>math351</category>
+        
+        <category>hw-problems</category>
+        
+      </item>
+    
+      <item>
+        <title>Math 355 Math for Machine Learning</title>
+        <description>
+</description>
+        <pubDate>Sun, 01 Sep 2019 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/bstone/teaching/2019/09/01/math-335.html</link>
+        <guid isPermaLink="true">http://localhost:4000/bstone/teaching/2019/09/01/math-335.html</guid>
+        
+        <category>fall2019</category>
+        
+        
+        <category>teaching</category>
+        
+      </item>
+    
+      <item>
+        <title>Math 113 Calculus I</title>
+        <description>
+</description>
+        <pubDate>Sun, 01 Sep 2019 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/bstone/teaching/2019/09/01/math-113.html</link>
+        <guid isPermaLink="true">http://localhost:4000/bstone/teaching/2019/09/01/math-113.html</guid>
+        
+        <category>fall2019</category>
+        
+        
+        <category>teaching</category>
+        
+      </item>
+    
+      <item>
+        <title>Math 216 Multivariable Calculus</title>
+        <description>
+</description>
+        <pubDate>Fri, 24 Aug 2018 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/bstone/teaching/2018/08/24/math-216.html</link>
+        <guid isPermaLink="true">http://localhost:4000/bstone/teaching/2018/08/24/math-216.html</guid>
+        
+        <category>fall2018</category>
+        
+        
+        <category>teaching</category>
+        
+      </item>
+    
+      <item>
+        <title>Math 116 Calculus II</title>
+        <description>
+</description>
+        <pubDate>Thu, 23 Aug 2018 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/bstone/teaching/2018/08/23/math-116.html</link>
+        <guid isPermaLink="true">http://localhost:4000/bstone/teaching/2018/08/23/math-116.html</guid>
+        
+        <category>fall2018</category>
+        
+        
+        <category>teaching</category>
+        
+      </item>
+    
+      <item>
+        <title>Math 201 Bridge to Higher Mathematics</title>
+        <description>
+</description>
+        <pubDate>Thu, 18 Jan 2018 00:00:00 -0500</pubDate>
+        <link>http://localhost:4000/bstone/teaching/2018/01/18/math-201.html</link>
+        <guid isPermaLink="true">http://localhost:4000/bstone/teaching/2018/01/18/math-201.html</guid>
+        
+        <category>spring2018</category>
+        
+        
+        <category>teaching</category>
+        
+      </item>
+    
+      <item>
+        <title>HW 03</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Readings:&lt;/em&gt; Chapter 5&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Skills Problems:&lt;/em&gt; 5.1, 5.5, 5.9, 5.10&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Homework Problems:&lt;/em&gt; 5.2, 5.6, 5.7. 5.8&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 14 Sep 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/bstone/teaching/math140/hw-problems/precalculus-fall2017/2017/09/14/hw03.html</link>
+        <guid isPermaLink="true">http://localhost:4000/bstone/teaching/math140/hw-problems/precalculus-fall2017/2017/09/14/hw03.html</guid>
+        
+        <category>math140hwF17</category>
+        
+        
+        <category>teaching</category>
+        
+        <category>math140</category>
+        
+        <category>hw-problems</category>
+        
+        <category>precalculus-fall2017</category>
+        
+      </item>
+    
+      <item>
+        <title>HW 02</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Readings:&lt;/em&gt; Chapter 3 and 4.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Skills Problems:&lt;/em&gt; 3.1, 3.2, 3.8, 4.1, 4.2, 4.3, 4.4, 4.5, 4.15, 4.16&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Homework Problems:&lt;/em&gt; 3.7, 4.7, 4.12, 4.13&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Thu, 07 Sep 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/bstone/teaching/math140/hw-problems/precalculus-fall2017/2017/09/07/hw02.html</link>
+        <guid isPermaLink="true">http://localhost:4000/bstone/teaching/math140/hw-problems/precalculus-fall2017/2017/09/07/hw02.html</guid>
+        
+        <category>math140hwF17</category>
+        
+        
+        <category>teaching</category>
+        
+        <category>math140</category>
+        
+        <category>hw-problems</category>
+        
+        <category>precalculus-fall2017</category>
+        
+      </item>
+    
+      <item>
+        <title>HW 01</title>
+        <description>&lt;ul&gt;
+  &lt;li&gt;&lt;em&gt;Readings:&lt;/em&gt; Chapter 1 and 2.&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Skills Problems:&lt;/em&gt; 1.1, 1.3, 1.5, 1.6, 1.7, 1.17, 2.1, 2.2, 2.3, 2.11, 2.12, 2.13&lt;/li&gt;
+  &lt;li&gt;&lt;em&gt;Homework Problems:&lt;/em&gt; 1.4, 1.13, 2.6&lt;/li&gt;
+&lt;/ul&gt;
+</description>
+        <pubDate>Tue, 29 Aug 2017 00:00:00 -0400</pubDate>
+        <link>http://localhost:4000/bstone/teaching/math140/hw-problems/precalculus-fall2017/2017/08/29/hw01.html</link>
+        <guid isPermaLink="true">http://localhost:4000/bstone/teaching/math140/hw-problems/precalculus-fall2017/2017/08/29/hw01.html</guid>
+        
+        <category>math140hwF17</category>
+        
+        
+        <category>teaching</category>
+        
+        <category>math140</category>
+        
+        <category>hw-problems</category>
+        
+        <category>precalculus-fall2017</category>
+        
+      </item>
+    
+  </channel>
+</rss>

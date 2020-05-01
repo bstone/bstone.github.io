@@ -1,0 +1,96 @@
+%  Created by Branden Stone on 2015-01-15.
+%  Copyright (c) 2015 Branden Stone. All rights reserved.
+%--------------------------------------------------------
+\documentclass{article}
+
+
+%---------------------------
+% Packages
+%---------------------------
+\usepackage{amssymb, amsmath, latexsym, amsfonts, amsthm, mathrsfs} % Standard packages that are nice to have.
+\usepackage{amsrefs} % Allows for easy referencing and citations.
+\usepackage{verbatim} % Needed for \begin{comment} \end{comment}.
+\usepackage[text={6in,9in},centering]{geometry} % Defines the dimensions of the text body.
+\usepackage[colorlinks=true]{hyperref} % Allows for use of hyperlinks.
+%\usepackage[doublespacing]{setspace} % Makes the document double spaced.
+\usepackage[pdftex]{graphicx} % Allows for \includegraphics
+\usepackage{enumerate} % Allows for easy modification of lists
+
+\renewcommand{\arraystretch}{1.5}
+
+%----------------------------
+% Title and Author
+%----------------------------
+
+\title{Math 390 Homework 10}
+\author{Due Friday, May 13}
+\date{}
+
+
+%----------------------------
+% Main Document Body
+%----------------------------
+
+\begin{document}
+
+
+%-------------------------------------------------------------
+% Front Matter: This is where you can add a table of contents,
+% preface, list of figures, ETC. for this template we will 
+% only create a title and author name with `\maketitle'
+%-------------------------------------------------------------
+
+\maketitle
+
+\setlength{\parindent}{0em} % Sets indentation of new paragraph
+\setlength{\parskip}{1em} % Sets space between paragraphs
+
+%-------------------------------------------------------------
+% Document Body: Essentially this is where you place the 
+% content of your document. To use this template, just delete
+% all of the text between here and the Bibliography Section.
+% Then type whatever you desire.
+%-------------------------------------------------------------
+
+
+Solutions should be written \LaTeX\ or Markdown and converted to a PDF. You are encouraged to work with others
+on the assignment, but you should write up your own solutions independently. This means no copy pasting. You should
+reference all of your sources, including your collaborators. 
+
+\begin{enumerate}
+
+\item Suppose that there exists a polynomial-time algorithm to determine whether a graph is 4-colorable. Show that there exists a polynomial time algorithm to determine whether a graph is 3-colorable. (This shows that if 3-colorability is NP-complete, then 4-colorability is NP-complete also.)
+
+\item Prove that $k^4 - 4k^3 + 3k^2$ is not a chromatic polynomial.
+
+\item There are six graphs with chromatic polynomial $k^6 - 5k^5 + 10k^4 - 10k^3 + 5k^2 - k$. Find
+all six graphs.
+
+%\item Consider the following linear programming problem: 
+%\begin{center}
+%	Maximize $-30x_1 - 3x_2 - 11x_3 - 8x_4 - 6x_5 - 12x_6$ subject to
+%\end{center}
+%\begin{align*}
+%-2x_1+x_2-2x_3-x_4-2x_5+ x_6 &\leqslant 6\\
+%-3x_1+x_2- x_3-x_4+ x_5-2x_6 &\leqslant −5 \\
+%x_1 \geqslant 0,\  x_2 \geqslant 0,\  x_3 \geqslant 0,\  x_4 \geqslant 0,\  x_5 \geqslant 0,\  & x_6 \geqslant 0	
+%\end{align*}
+
+%\begin{enumerate}
+%	\item Determine the dual problem.
+%	\item Solve the dual problem. (Graph the region corresponding to the inequalities; the minimum value will occur at one of the vertices of the region.)
+%	\item What is the maximum possible value of $-30x_1 - 3x_2 - 11x_3 - 8x_4 - 6x_5 - 12x_6$ subject to the above inequalities?
+%\end{enumerate}
+
+
+\item Let $T$ be a tree. Prove that $T$ has a complete matching if and only if for every vertex $v$, exactly one component of $T-v$ has an odd number of vertices. (Hint: For the backwards direction, use induction on the number of vertices of $T$ . Find a leaf with a neighbor of degree 2 and delete them both.)
+
+
+
+
+\end{enumerate}
+
+
+
+
+\end{document}

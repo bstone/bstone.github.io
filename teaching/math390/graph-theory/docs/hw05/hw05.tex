@@ -1,0 +1,84 @@
+%  Created by Branden Stone on 2015-01-15.
+%  Copyright (c) 2015 Branden Stone. All rights reserved.
+%--------------------------------------------------------
+\documentclass{article}
+
+
+%---------------------------
+% Packages
+%---------------------------
+\usepackage{amssymb, amsmath, latexsym, amsfonts, amsthm, mathrsfs} % Standard packages that are nice to have.
+\usepackage{amsrefs} % Allows for easy referencing and citations.
+\usepackage{verbatim} % Needed for \begin{comment} \end{comment}.
+\usepackage[text={6in,9in},centering]{geometry} % Defines the dimensions of the text body.
+\usepackage[colorlinks=true]{hyperref} % Allows for use of hyperlinks.
+%\usepackage[doublespacing]{setspace} % Makes the document double spaced.
+\usepackage[pdftex]{graphicx} % Allows for \includegraphics
+\usepackage{enumerate} % Allows for easy modification of lists
+
+\renewcommand{\arraystretch}{1.5}
+
+%----------------------------
+% Title and Author
+%----------------------------
+
+\title{Math 390 Homework 5}
+\author{Due Wednesday, March 2}
+\date{}
+
+
+%----------------------------
+% Main Document Body
+%----------------------------
+
+\begin{document}
+
+
+%-------------------------------------------------------------
+% Front Matter: This is where you can add a table of contents,
+% preface, list of figures, ETC. for this template we will 
+% only create a title and author name with `\maketitle'
+%-------------------------------------------------------------
+
+\maketitle
+
+\setlength{\parindent}{0em} % Sets indentation of new paragraph
+\setlength{\parskip}{1em} % Sets space between paragraphs
+
+%-------------------------------------------------------------
+% Document Body: Essentially this is where you place the 
+% content of your document. To use this template, just delete
+% all of the text between here and the Bibliography Section.
+% Then type whatever you desire.
+%-------------------------------------------------------------
+
+
+Solutions should be written \LaTeX\ or Markdown and converted to a PDF. You are encouraged to work with others
+on the assignment, but you should write up your own solutions independently. This means no copy pasting. You should
+reference all of your sources, including your collaborators. 
+
+\begin{enumerate}
+
+\item (Exercise 13.4/4.16) Let $G$ be the graph of a polyhedron (or polyhedral graph) in which every face is a pentagon or hexagon.
+\begin{enumerate}
+	\item Use Euler's formula to show that $G$ must have at least 12 pentagonal faces.
+	\item Prove, in addition, that if there are exactly three faces meeting at each vertex then $G$ has exactly 12 pentagonal faces.
+\end{enumerate}
+
+\item An {\bf automorphism} $\varphi$ of a simple graph $G$ is a one-to-one mapping of the vertex set of $G$ onto itself with the property that $\varphi(v)$ and $\varphi(w)$ are adjacent whenever $v$ and $w$ are adjacent (in other words, an automorphism is an isomorphism from $G$ to $G$).
+\begin{enumerate}
+	\item How many automorphisms does $K_4$ have?
+	\item How many automorphisms does $K_{3,3}$ have?
+	\item Construct a simple graph with six vertices whose only automorphism is the identity.
+	\item Construct a simple graph that has exactly three automorphisms. (Hint: Think of a rotating triangle with appendages to prevent flips.)
+\end{enumerate}
+
+\item Play the planarity game at \url{http://www.planarity.net}. Submit a screenshot of a completed level 4 game. (Note: It is possible to skip directly to level 4, but if you have not played the game before, you may want to start with level 1.)
+\end{enumerate}
+
+
+
+
+
+
+\end{document}

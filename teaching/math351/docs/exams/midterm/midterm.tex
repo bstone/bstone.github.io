@@ -1,0 +1,505 @@
+%  Created by Branden Stone on 2015-01-15.
+%  Copyright (c) 2015 Branden Stone. All rights reserved.
+%--------------------------------------------------------
+\documentclass{exam}
+
+
+%---------------------------
+% Packages
+%---------------------------
+\usepackage{amssymb, amsmath, latexsym, amsfonts, amsthm, mathrsfs} % Standard packages that are nice to have.
+\usepackage{amsrefs} % Allows for easy referencing and citations.
+\usepackage{verbatim} % Needed for \begin{comment} \end{comment}.
+\usepackage[text={6in,9in},centering]{geometry} % Defines the dimensions of the text body.
+\usepackage[colorlinks=true]{hyperref} % Allows for use of hyperlinks.
+%\usepackage[doublespacing]{setspace} % Makes the document double spaced.
+\usepackage[pdftex]{graphicx} % Allows for \includegraphics
+
+\addpoints
+
+\newcommand{\lst}[2]{#1_1,\dots,#1_{#2}}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\vl}{\; | \;}
+\newcommand{\ds}{\displaystyle}
+
+\renewcommand{\labelenumi}{(\arabic{enumi})} % sets enumerate to use (1),(2),...
+
+\DeclareMathOperator{\Div}{Div}
+\DeclareMathOperator{\Li}{Li}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\ind}{ind}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\new}{new}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\tor}{tor}
+\DeclareMathOperator{\ur}{ur}
+\renewcommand{\i}[1]{\index{#1}}
+\newcommand{\ii}[1]{#1\index{#1}}
+\newcommand{\defn}[1]{{\em #1}\index{#1|nn}}
+\newcommand{\ithm}[1]{\index{theorem!#1}\index{#1 theorem}}
+\newcommand{\iprop}[1]{\index{proposition!#1}\index{#1 proposition}}
+\newcommand{\icor}[1]{\index{corollary!#1}\index{#1 corollary}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\D}{{\mathbb D}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Gam}{\Gamma}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+
+\newcommand{\abcd}[4]{%
+      \left(\begin{smallmatrix}#1&#2\\#3&#4%
+            \end{smallmatrix}\right)}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\alp}{\alpha}
+%\newcommand{\assign}{\leftarrow}
+\newcommand{\assign}{=}
+\newcommand{\con}{\equiv}
+\newcommand{\cross}{\times}
+\newcommand{\da}{\downarrow}
+
+\newcommand{\eps}{\varepsilon}
+\newcommand{\exref}[2]{Exercise~\ref{#1}.\ref{#2}}
+\newcommand{\e}{\mathbf{e}}
+\newcommand{\hd}[1]{\vspace{1ex}\noindent{\bf #1} }
+\newcommand{\hra}{\hookrightarrow}
+\newcommand{\h}{\mathfrak{h}}
+\newcommand{\intersect}{\cap}
+\newcommand{\isom}{\cong}
+\newcommand{\kr}[2]{\left(\frac{#1}{#2}\right)}
+\newcommand{\la}{\leftarrow}
+\newcommand{\lra}{\longrightarrow}
+\newcommand{\m}{\mathfrak{m}}
+\newcommand{\ncisom}{\approx}
+\newcommand{\p}{\mathfrak{p}}
+%\newcommand{\q}{\mathbf{q}}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\set}[1]{\{#1\}}
+\newcommand{\ul}[1]{\underline{#1}}
+\newcommand{\union}{\cup}
+\newcommand{\vphi}{\varphi}
+\newcommand{\zmod}[1]{\Z/#1\Z{}}
+\renewcommand{\L}{\mathcal{L}}
+\renewcommand{\O}{\mathcal{O}}
+\renewcommand{\P}{\mathbb{P}}
+\renewcommand{\Re}{\mbox{\rm Re}}
+\renewcommand{\a}{\mathfrak{a}}
+\renewcommand{\l}{\ell}
+\renewcommand{\mathbb}{\mathbf}
+\renewcommand{\t}{\tau}
+\newcommand{\nn}[1]{{\bf #1}} % used for primary ref in index
+
+\newcommand{\sage}{Sage\xspace}
+\newcommand{\SAGE}{\sage}
+%----------------------------
+% Title and Author
+%----------------------------
+
+\title{Math 351 Midterm}
+\author{Due Monday, November 28 at 5pm}
+\date{}
+
+
+%----------------------------
+% Main Document Body
+%----------------------------
+
+\begin{document}
+
+
+%-------------------------------------------------------------
+% Front Matter: This is where you can add a table of contents,
+% preface, list of figures, ETC. for this template we will 
+% only create a title and author name with `\maketitle'
+%-------------------------------------------------------------
+
+\maketitle
+
+\setlength{\parindent}{0em} % Sets indentation of new paragraph
+\setlength{\parskip}{1em} % Sets space between paragraphs
+
+%-------------------------------------------------------------
+% Document Body: Essentially this is where you place the 
+% content of your document. To use this template, just delete
+% all of the text between here and the Bibliography Section.
+% Then type whatever you desire.
+%-------------------------------------------------------------
+
+This is a out-of-class exam. You can work with a group on any problem worth at least 15 points, but on the problems worth either 5 or 10 points you are not to talk about the problem with anyone (except me). If you do work as a group on a problem, clearly state on your paper who is in your group. You should turn in NO MORE than 100 points worth of problems, and I will be grading the test as if it were based on 100 total points. There are 5, 10, 15, 20, 40, and 50 point problems. In general, the more points, the harder the problem (in some cases the scale is exponential, not linear). Throughout the test $\R$, $\C$, $\Q$ and $\Z$ are the real numbers, complex numbers, the rational numbers, and the integers, respectively.  If you have questions, you can come to my office hours or ask me via e-mail.  Solutions should be written in \LaTeX\ or Markdown and converted to a PDF. There are \numquestions\ questions for a total of \numpoints\ points to choose from. Good~luck!
+
+\begin{questions}
+	\question[15] Let $a,b \in \Z$. In class we defined $\ol a \in \Z/n\Z$ such that 
+	\[
+		\ol a = \{ z \in \Z \vl \text{ the remainders of } a \text{ and } z \text{ are the same when divided by } n  \}.
+	\]
+	Show the following statements are equivalent. 
+		\begin{enumerate}
+			\item $\ol a = \ol b$ as elements in $\Z/n\Z$;
+			\item $a + n\Z = b + n\Z$ (Here $c+n\Z := \{ c+ z \vl z \in n\Z\}$); 
+			\item $a-b \in n\Z$;
+			\item There exists $q_1, q_2,r \in Z$, $0 \leqslant r < n$, such that 
+				\begin{align*}
+					a &= q_1 n + r \\
+					b &= q_2 n + r.
+				\end{align*}
+		\end{enumerate}
+
+	% HW01
+	%\question[5] Compute the greatest common divisor $\gcd(455,1235)$ by hand.
+
+	\question[5] Use the prime enumeration sieve to make a list of all primes up to $100$.
+
+	% HW02
+	%\question[10] Prove that there are infinitely many primes of the form $6x-1$.
+
+	% HW02
+	% \question[5] Use Prime Number theorem to deduce that $\ds \lim_{x\to\infty} \frac{\pi(x)}{x} = 0$.
+
+	\question[5] Let $\psi(x)$ be the number of primes of the form $4k-1$ that are $\leq x$.  Use a computer to make a conjectural guess about $\lim_{x\to\infty} \psi(x) / \pi(x)$. You must explain your reasoning and give any code you might have used. 
+
+	% \item So far $44$ Mersenne primes $2^p-1$ have been discovered. Give a guess, backed up by an argument, about when the next Mersenne prime might be discovered (you will have to do some online research).
+
+	\question[5] In the following parts, assume that $y = 10000$.
+		\begin{enumerate}
+			\item Compute $\pi(y) = \#\{ \text{primes } p \leq y\}.$
+			\item The prime number theorem implies $\pi(x)$ is asymptotic to $\ds \frac{x}{\log(x)}$.  How close is $\pi(y)$ to $y/\log(y)$?
+		\end{enumerate}
+
+	% HW01
+	%\question[10] Let $a,b,c,n$ be integers.  Prove that 
+	%	\begin{enumerate}
+	%		\item if $a \mid n$ and $b\mid n$ with $\gcd(a,b)=1$, then $ab\mid n$.
+	%		\item if $a\mid bc$ and $\gcd(a,b)=1$, then $a\mid c$.
+	%	\end{enumerate}
+
+	\question[15] Let $a,b,c,d$, and $m$ be integers.  Prove that
+		\begin{enumerate}
+			\item if $a\mid b$ and $b\mid c$ then $a\mid c$. %Jones&Jones
+			\item if $a\mid b$ and $c\mid d$ then $ac\mid bd$.
+			\item if $m\neq 0$, then $a\mid b$ if and only if $ma\mid mb$.
+			\item if $d\mid a$ and $a\neq 0$, then $|d|\leq |a|$.
+		\end{enumerate}
+
+	% HW01
+	% pg 13 of kumanduri/romero
+	%\question[5] In each of the following, apply the division algorithm to find $q$ and $r$ such that $a = bq + r$ and $0\leq r < |b|$:
+	%	\[
+	%		a=300, b=17,\,\,
+	%		a=729,b=31,\,\,
+	%		a=300,b=-17,\,\,
+	%		a=389,b=4.
+	%	\]
+
+	\question[5] 
+		\begin{enumerate} 
+			\item[(a)] (Do this part by hand.) Compute the greatest common divisor of $323$ and $437$ using the division algorithm (i.e., do not just factor $a$ and $b$).
+			\item[(b)] Compute by any means the greatest common divisor of
+			$$314159265358979323846264338$$ 
+			and 
+			$$271828182845904523536028747.$$
+		\end{enumerate}
+
+	\question[10] Suppose $p$ is a prime and $a$ and $k$ are positive integers.  Prove that if $p \mid a^k$, then $p^k \mid a^k$.
+	%	\begin{enumerate}
+	% First on was on HW02
+	%		\item Suppose $a$, $b$ and $n$ are positive integers. Prove
+	%		that if $a^n\mid b^n$, then $a\mid b$.
+	%		\item Suppose $p$ is a prime and $a$ and $k$ are positive integers.  Prove that if $p \mid a^k$, then $p^k \mid a^k$.
+	%	\end{enumerate}
+
+	%Burton, page 26
+	\question[10]
+		\begin{enumerate}
+			\item[(a)]  Prove that if a positive integer $n$ is a perfect square, then $n$ cannot be written in the form $4k+3$ for $k$ an integer.
+			\item[(b)]  Prove that no integer in the sequence
+			$$
+			  11, 111, 1111, 11111, 111111, \ldots
+			$$
+			is a perfect square.   (Hint: $111\cdots111 = 111\cdots 108 + 3 = 4k+3$.)
+		\end{enumerate}
+
+	%HW01
+	%\question[10] Prove that a positive integer $n$ is prime if and only if $n$ is not divisible by any prime $p$ with $1 < p \leq \sqrt{n}$.
+
+
+	\question[10] Prove that for any positive integer $n$, the set $(\zmod{n})^*$ under multiplication modulo~$n$ is a group. 
+
+	\question[5] Compute the following gcd's using Euclid's Algorithm:
+	\[
+	  \gcd(15,35)\quad
+	  \gcd(247,299)\quad
+	  \gcd(51,897) \quad
+	  \gcd(136,304)
+	\]
+
+	\question[5] Use the Extended Euclidean Algorithm to find $x,\, y\in\Z$ such that $2261x + 1275y =~17$.
+
+	\question[10] Prove that if $a$ and $b$ are integers and $p$ is a prime, then $(a+b)^p \con a^p + b^p\pmod{p}$.  You may assume that the binomial coefficient
+	$$
+	   \binom p r = \frac{p!}{r!(p-r)!}
+	$$
+	is an integer.
+
+
+	\question[15]\label{ex:allsoln}
+	\begin{enumerate}
+		\item Prove that if $x, y$ is a solution to
+		$ax + by = d$, with $d=\gcd(a,b)$,
+		then for all $c\in\Z$,
+		\begin{equation}\label{eqn:allsoln}
+		   x' = x+ c\cdot\frac{b}{d}, \qquad
+		   y' = y - c\cdot\frac{a}{d}
+		\end{equation}
+		is also a solution to $ax+by=d$.
+		\item Find two distinct solutions to $2261x + 1275y = 17$.
+		\item Prove that all solutions are of the form (\ref{eqn:allsoln})
+		for some~$c$.
+	\end{enumerate}
+
+	\question[5]\label{ex:polrepconj}
+	 Let $f(x)=x^2+ax+b \in\Z[x]$ be a quadratic
+	polynomial with integer coefficients, for example, $f(x)=x^2+x+6$.
+	Formulate a conjecture about when the set
+	$$
+	\{ f(n) : n\in \Z \text{ and $f(n)$ is prime}\}
+	$$
+	is infinite.  Give numerical evidence
+	that supports your conjecture.
+
+	\question[5]\label{ex:residues}
+	Find four complete sets of residues modulo~$7$, where the
+	$i$th set satisfies the $i$th condition:
+	 (1) nonnegative, (2) odd, (3) even, (4) prime.
+
+ 	% HW04
+	%\question[10] Find rules in the spirit of Proposition~\ref{prop:div3} for divisibility of an integer by~$5$,~$9$, and~$11$, and prove each of these rules using arithmetic modulo a suitable~$n$.
+
+% BAER
+	\question[20] Define a sequence of decimal integers $a_n$ as follows: $a_1 = 0$, $a_2 = 1$, and $a_{n+2}$ is obtained by writing the digits of $a_{n+1}$ immediately followed by those of $a_n$.  For example, $a_3 = 10$, $a_4 = 101$, and $a_5 = 10110$. Determine the~$n$ such that $a_n$ is a multiple of $11$, as follows:
+	\begin{enumerate}
+		\item[(a)] Find the smallest integer $n>1$ such that $a_n$ is divisible by
+		$11$.
+		\item[(b)] Prove that $a_n$ is divisible by $11$ if and only if
+		$n\con 1\pmod{6}$.
+	\end{enumerate}
+
+	% HW04
+	%\item\label{ex:invmod} Find an integer~$x$ such that $37x \con 1\pmod{101}$.
+
+	% HW03
+	%\question[5] What is the order of~$2$ modulo $17$?
+
+	% HW04
+	%\question[5] Let $n=\vphi(20!)=416084687585280000$. Compute the prime factorization of~$n$ using the multiplicative property of~$\vphi$.
+
+	% HW03
+	%\question[10] Let~$p$ be a prime.  Prove that $\zmod{p}$ is a field.
+
+	% HW04
+	%\item\label{ex:crt} Find an $x\in\Z$ such that $x \con -4 \pmod{17}$ and $x\con 3\pmod{23}$.
+
+
+	% HW03
+	%\question[10] Prove that if $n>4$ is composite then
+	%$$
+	%   (n-1)! \con 0 \pmod{n}.
+	%$$
+
+	% HW03
+	%\question[10] For what values of~$n$ is $\vphi(n)$ odd?
+
+	\question[15]\label{ex:multproof2}
+	\begin{enumerate}
+	\item Prove that $\vphi$ is multiplicative as follows.  Suppose $m,n$ are
+	positive integers and $\gcd(m,n)~=~1$.  Show that
+	the natural map $\psi:\zmod{mn} \ra \zmod{m} \cross \zmod{n}$ is
+	an injective homomorphism of rings, hence bijective by counting, then
+	look at unit groups.
+	\item Prove conversely that if $\gcd(m,n)>1$, then
+	the natural map $\psi:\zmod{mn} \ra \zmod{m} \cross \zmod{n}$
+	is not an isomorphism.
+	\end{enumerate}
+
+	\question[40] Suppose $b$ is any integer that is relatively prime to $h$, $1 \leqslant h \leqslant 72$. If $x \geqslant 106706$, then the interval $(x, 1.048x]$ contains a prime congruent to $b$ modulo $h$.
+
+	% HW04
+	% \item\label{ex:thieves} Seven competitive math students try to share a huge hoard of stolen math books equally between themselves.  Unfortunately, six books are left over, and in the fight over them, one math student is expelled.  The remaining six math students, still unable to share the math books equally since two are left over, again fight, and another is expelled.  When the remaining five share the books, one book is left over, and it is only after yet another math student is expelled that an equal sharing is possible. What is the minimum number of books that allows this to happen?
+
+
+
+% Baer
+\item\label{ex:pcube} Show that if $p$ is a positive integer such that both~$p$
+and $p^2+2$ are prime, then $p=3$.
+% \begin{enumerate}
+% \item Prove that there are only finitely many such $p$.
+% \item Show that $p^3 + 2$ must also be prime.
+% \end{enumerate}
+
+
+\question[5]\label{ex:phimult} Let $\vphi:\N\ra\N$ be the
+Euler~$\vphi$ function.
+\begin{enumerate}
+   \item Find all natural numbers~$n$ such that $\vphi(n)=1$.
+   \item Do there exist natural numbers~$m$ and~$n$ such that
+     $\vphi(mn)\neq \vphi(m)\cdot \vphi(n)$?
+      \end{enumerate}
+
+%Baer
+\question[5]\label{ex:phiformula} Find a formula for $\vphi(n)$ directly in terms
+of the prime factorization of~$n$.
+
+%\question[]\label{ex:ker}
+%\begin{enumerate}
+%\item Prove that if $\vphi:G\to H$ is a group
+%  homomorphism, then $\ker(\vphi)$ is a subgroup of $G$.
+%\item Prove that $\ker(\vphi)$ is \defn{normal}, i.e.,
+%if $a\in G$ and $b\in\ker(\vphi)$, then $a^{-1} b a \in \ker(\vphi)$.
+%\end{enumerate}
+
+\question[5] Is the set $\Z/5\Z=\{0,1,2,3,4\}$ with binary operation
+multiplication modulo $5$ a group? If so, prove it. If not, show why.
+
+\question[10]\label{ex:solnsqrtmod35} Find all {\em four} solutions to the equation
+$$
+  x^2 - 1\con 0 \pmod{35}.
+$$
+
+\question[10]\label{ex:reducedfraction}
+Prove that for any positive integer~$n$ the fraction
+  $(12n+1)/(30n+2)$ is in reduced form.
+
+% \item For any positive integer~$n$, prove that
+%       one of $n^2\pm 1$ is divisible by $17$.
+
+\question[10]\label{ex:gcd2} Suppose $a$ and $b$ are positive integers.
+\begin{enumerate}
+\item Prove that
+$\gcd(2^a-1,\,\, 2^b-1) = 2^{\gcd(a,b)}-1.$
+\item Does it matter if $2$ is replaced by an arbitrary prime~$p$?
+\item What if $2$ is replaced by an arbitrary positive integer $n$?
+\end{enumerate}
+
+\question[10]
+For every positive integer $b$, show that there exists a positive
+integer $n$ such that the polynomial $x^2-1\in(\zmod{n})[x]$
+has at least $b$ roots.
+
+\question[15]\label{ex:prim1}
+\begin{enumerate}
+	% HW05
+	%\item Prove that there is no primitive root modulo~$2^n$ for any $n\geq 3$.
+%(Hint: Relate the statement for $n=3$ to the statement for $n>3$.)
+\item Prove that $(\zmod{2^n})^*$ is generated by $-1$ and $5$.
+\end{enumerate}
+
+\question[15]\label{ex:prim2}
+Let~$p$ be an odd prime.
+\begin{enumerate}
+\item (*) Prove that there is a primitive root modulo~$p^2$.
+(Hint: Use that if $a, b$
+      have orders $n, m$, with $\gcd(n,m)=1$, then $ab$ has order $nm$.)
+\item Prove that for any~$n$, there is a primitive root modulo~$p^n$.
+\item Explicitly find a primitive root modulo $125$.
+\end{enumerate}
+
+ \question[10] \label{ex:prim_fac}(*)
+ In terms of the prime factorization of~$n$, characterize the
+ integers~$n$ such that there is a primitive root modulo~$n$.
+
+ 	% HW05
+	%\item\label{ex:pow} Compute the last two digits of $3^{45}$.
+
+ 	% HW05
+	%\item\label{ex:pow2}
+	%Find the integer~$a$ such that $0\leq a < 113$ and
+	%$$
+	%  102^{70}+1 \con a^{37}\pmod{113}.
+	%$$
+
+\question[10]  \label{ex:comp_prop} Find the proportion of primes~$p<1000$
+such that~$2$ is a primitive root modulo~$p$.
+
+\question[10] \label{ex:pr2} Find a prime $p$ such that the smallest
+primitive root modulo $p$ is $37$.
+
+\question[50]
+Suppose $a\in\Z$ is not $-1$ or a perfect square.  Then there are
+infinitely many primes~$p$ such that~$a$ is a primitive root
+modulo~$p$.
+
+\question[5]\label{ex:crypto2}  This problem concerns encoding phrases
+using numbers.
+What is the longest that an arbitrary sequence of letters (no spaces)
+can be if it must fit in a number that is less than $10^{20}$?
+
+	%HW05
+	%\item \label{ex:crypto6}
+	%Suppose Michael creates an RSA cryptosystem with a very large modulus~$n$ for which the factorization of~$n$ cannot be found in a reasonable amount of time. Suppose that Nikita sends messages to Michael by representing each alphabetic character as an integer between~$0$ and~$26$ (\verb*|A| corresponds to $1$, \verb*|B| to~$2$, etc., and a space \verb*| | to~$0$), then encrypts each number {\em separately} using Michael's RSA cryptosystem.  Is this method secure? Explain your answer.
+
+\question[15]\label{ex:crack3}
+   For any $n\in\N$, let $\sigma(n)$ be the
+  sum of the divisors of~$n$; for example, $\sigma(6) = 1+2+3+6=12$ and
+  $\sigma(10)=1+2+5+10=18$.
+  Suppose that $n=pqr$ with $p$, $q$, and $r$ distinct primes.  Devise
+  an ``efficient'' algorithm that given $n$, $\vphi(n)$ and
+  $\sigma(n)$, computes the factorization of~$n$.  For example, if
+  $n=105$, then $p=3$, $q=5$, and $r=7$, so the input to the algorithm
+  would be
+  $$
+    n = 105,\qquad \vphi(n) = 48, \qquad \text{and}\quad \sigma(n)=192,
+  $$
+  and the output would be $3$, $5$, and $7$.
+%   \item Use your algorithm to factor $n=60071026003$ given that
+%     $\vphi(n) = 60024000000$ and $\sigma(n) = 60118076016$.
+
+
+%\question[]\label{ex:crypto1}  You and Nikita wish to agree on a secret key using
+%the Diffie-Hellman key exchange.  Nikita announces that $p=3793$ and
+%$g=7$.  Nikita secretly chooses a number~$n<p$ and tells you
+%that $g^n\con 454\pmod{p}$.  You choose the random number
+%$m=1208$.  What is the secret key?
+
+%\question[]\label{ex:crypto3} You see Michael and Nikita agree on a secret
+%  key using the Diffie-Hellman key exchange.  Michael and Nikita
+%  choose $p=97$ and $g=5$.  Nikita chooses a random number~$n$ and
+%  tells Michael that $g^n\con 3\pmod{97}$, and Michael chooses a
+%  random number~$m$ and tells Nikita that $g^m\con 7\pmod{97}$.  Brute
+%  force crack their code: What is the secret key that Nikita and
+%  Michael agree upon?  What is~$n$?  What is~$m$?
+
+	%HW05
+	% \item\label{ex:crypto4}
+	% Using the RSA public key $(n,e) = (441484567519, 238402465195)$,
+	% encrypt the current year.
+
+\question[15] Using any language, implement Algorithm 2.3.13. Your code must be well indented and well documented.
+
+\question[10]\label{ex:crypto5}
+In this problem, you will ``crack'' an RSA cryptosystem.
+What is the secret decoding number~$d$ for the RSA
+cryptosystem with public key $(n,e) = (5352381469067, 4240501142039)$?
+
+\question[10] \label{ex:crypto7}
+Nikita creates an RSA cryptosystem with public key
+$$(n,e)=(1433811615146881, 329222149569169).$$
+In the following problem, show the steps you take to factor~$n$.
+(Don't simply factor~$n$ directly using a computer.)
+\begin{enumerate}
+\item
+Somehow you discover that $d=116439879930113$.  Show how to use the
+probabilistic algorithm (Algorithm 3.4.5) to factor~$n$.
+%\item
+%In part (a) you found that the factors~$p$ and~$q$ of~$n$ are very close.
+%Show how to use the Fermat Factorization
+% Method of Section~\ref{sec:fermatcrack} to factor~$n$.
+\end{enumerate}
+
+
+\end{questions}
+
+
+
+
+
+\end{document}

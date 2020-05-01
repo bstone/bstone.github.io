@@ -1,0 +1,153 @@
+%  Created by Branden Stone on 2015-01-15.
+%  Copyright (c) 2015 Branden Stone. All rights reserved.
+%--------------------------------------------------------
+\documentclass{article}
+
+
+%---------------------------
+% Packages
+%---------------------------
+\usepackage{amssymb, amsmath, latexsym, amsfonts, amsthm, mathrsfs} % Standard packages that are nice to have.
+\usepackage{amsrefs} % Allows for easy referencing and citations.
+\usepackage{verbatim} % Needed for \begin{comment} \end{comment}.
+\usepackage[text={6in,9in},centering]{geometry} % Defines the dimensions of the text body.
+\usepackage[colorlinks=true]{hyperref} % Allows for use of hyperlinks.
+%\usepackage[doublespacing]{setspace} % Makes the document double spaced.
+\usepackage[pdftex]{graphicx} % Allows for \includegraphics
+\usepackage{enumerate} % Allows for easy modification of lists
+
+\renewcommand{\arraystretch}{1.5}
+
+\newcommand{\lst}[2]{#1_1,\dots,#1_{#2}}
+\newcommand{\ol}[1]{\overline{#1}}
+\newcommand{\Z}{\mathbb Z}
+\newcommand{\vl}{\; | \;}
+\newcommand{\ds}{\displaystyle}
+
+\renewcommand{\labelenumi}{(\arabic{enumi})} % sets enumerate to use (1),(2),...
+
+\DeclareMathOperator{\Div}{Div}
+\DeclareMathOperator{\Li}{Li}
+\DeclareMathOperator{\SL}{SL}
+\DeclareMathOperator{\ind}{ind}
+\DeclareMathOperator{\lcm}{lcm}
+\DeclareMathOperator{\new}{new}
+\DeclareMathOperator{\ord}{ord}
+\DeclareMathOperator{\tor}{tor}
+\DeclareMathOperator{\ur}{ur}
+\renewcommand{\i}[1]{\index{#1}}
+\newcommand{\ii}[1]{#1\index{#1}}
+\newcommand{\defn}[1]{{\em #1}\index{#1|nn}}
+\newcommand{\ithm}[1]{\index{theorem!#1}\index{#1 theorem}}
+\newcommand{\iprop}[1]{\index{proposition!#1}\index{#1 proposition}}
+\newcommand{\icor}[1]{\index{corollary!#1}\index{#1 corollary}}
+\newcommand{\C}{\mathbb{C}}
+\newcommand{\D}{{\mathbb D}}
+\newcommand{\F}{\mathbb{F}}
+\newcommand{\Gam}{\Gamma}
+\newcommand{\N}{\mathbb{N}}
+\newcommand{\Q}{\mathbb{Q}}
+\newcommand{\R}{\mathbb{R}}
+
+\newcommand{\abcd}[4]{%
+      \left(\begin{smallmatrix}#1&#2\\#3&#4%
+            \end{smallmatrix}\right)}
+\newcommand{\abs}[1]{\left|#1\right|}
+\newcommand{\alp}{\alpha}
+%\newcommand{\assign}{\leftarrow}
+\newcommand{\assign}{=}
+\newcommand{\con}{\equiv}
+\newcommand{\cross}{\times}
+\newcommand{\da}{\downarrow}
+
+\newcommand{\eps}{\varepsilon}
+\newcommand{\exref}[2]{Exercise~\ref{#1}.\ref{#2}}
+\newcommand{\e}{\mathbf{e}}
+\newcommand{\hd}[1]{\vspace{1ex}\noindent{\bf #1} }
+\newcommand{\hra}{\hookrightarrow}
+\newcommand{\h}{\mathfrak{h}}
+\newcommand{\intersect}{\cap}
+\newcommand{\isom}{\cong}
+\newcommand{\kr}[2]{\left(\frac{#1}{#2}\right)}
+\newcommand{\la}{\leftarrow}
+\newcommand{\lra}{\longrightarrow}
+\newcommand{\m}{\mathfrak{m}}
+\newcommand{\ncisom}{\approx}
+\newcommand{\p}{\mathfrak{p}}
+%\newcommand{\q}{\mathbf{q}}
+\newcommand{\ra}{\rightarrow}
+\newcommand{\set}[1]{\{#1\}}
+\newcommand{\ul}[1]{\underline{#1}}
+\newcommand{\union}{\cup}
+\newcommand{\vphi}{\varphi}
+\newcommand{\zmod}[1]{\Z/#1\Z{}}
+\renewcommand{\L}{\mathcal{L}}
+\renewcommand{\O}{\mathcal{O}}
+\renewcommand{\P}{\mathbb{P}}
+\renewcommand{\Re}{\mbox{\rm Re}}
+\renewcommand{\a}{\mathfrak{a}}
+\renewcommand{\l}{\ell}
+\renewcommand{\mathbb}{\mathbf}
+\renewcommand{\t}{\tau}
+\newcommand{\nn}[1]{{\bf #1}} % used for primary ref in index
+
+\newcommand{\sage}{Sage\xspace}
+\newcommand{\SAGE}{\sage}
+%----------------------------
+% Title and Author
+%----------------------------
+
+\title{Math 351 Homework 4}
+\author{Due Friday, October 7 at 5pm}
+\date{}
+
+
+%----------------------------
+% Main Document Body
+%----------------------------
+
+\begin{document}
+
+
+%-------------------------------------------------------------
+% Front Matter: This is where you can add a table of contents,
+% preface, list of figures, ETC. for this template we will 
+% only create a title and author name with `\maketitle'
+%-------------------------------------------------------------
+
+\maketitle
+
+\setlength{\parindent}{0em} % Sets indentation of new paragraph
+\setlength{\parskip}{1em} % Sets space between paragraphs
+
+%-------------------------------------------------------------
+% Document Body: Essentially this is where you place the 
+% content of your document. To use this template, just delete
+% all of the text between here and the Bibliography Section.
+% Then type whatever you desire.
+%-------------------------------------------------------------
+
+
+Solutions should be written \LaTeX\ or Markdown and converted to a PDF. You are encouraged to work with others on the assignment, but you should write up your own solutions independently. This means no copy pasting. You should reference all of your sources, including your collaborators. 
+
+\begin{enumerate}
+
+	\item Find an $x\in\Z$ such that $x \equiv -4 \pmod{17}$ and $x\con 3\pmod{23}$.
+
+	\item  Find rules for divisibility of an integer by~$5$,~$9$, and~$11$, and prove each of these rules using arithmetic modulo a suitable~$n$.
+
+	\item Find an integer~$x$ such that $37x \con 1\pmod{101}$.
+
+	\item Let $n=\vphi(20!)=416084687585280000$. Compute the prime factorization of~$n$ using the multiplicative property of~$\vphi$.
+
+	\item Show that if $p$ is a positive integer such that both~$p$ and $p^2+2$ are prime, then $p=3$.
+
+	\item Seven competitive math students try to share a huge hoard of stolen math books equally between themselves.  Unfortunately, six books are left over, and in the fight over them, one math student is expelled.  The remaining six math students, still unable to share the math books equally since two are left over, again fight, and another is expelled.  When the remaining five share the books, one book is left over, and it is only after yet another math student is expelled that an equal sharing is possible. What is the minimum number of books that allows this to happen?
+
+\end{enumerate}
+
+
+
+
+
+\end{document}

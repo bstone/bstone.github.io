@@ -1,0 +1,101 @@
+%  Created by Branden Stone on 2015-01-15.
+%  Copyright (c) 2015 Branden Stone. All rights reserved.
+%--------------------------------------------------------
+\documentclass{article}
+
+
+%---------------------------
+% Packages
+%---------------------------
+\usepackage{amssymb, amsmath, latexsym, amsfonts, amsthm, mathrsfs} % Standard packages that are nice to have.
+\usepackage{amsrefs} % Allows for easy referencing and citations.
+\usepackage{verbatim} % Needed for \begin{comment} \end{comment}.
+\usepackage[text={6in,9in},centering]{geometry} % Defines the dimensions of the text body.
+\usepackage[colorlinks=true]{hyperref} % Allows for use of hyperlinks.
+%\usepackage[doublespacing]{setspace} % Makes the document double spaced.
+\usepackage[pdftex]{graphicx} % Allows for \includegraphics
+
+
+
+%----------------------------
+% Title and Author
+%----------------------------
+
+\title{Math 351 Homework 1}
+\author{Due Friday, September 9 at 5pm}
+\date{}
+
+
+%----------------------------
+% Main Document Body
+%----------------------------
+
+\begin{document}
+
+
+%-------------------------------------------------------------
+% Front Matter: This is where you can add a table of contents,
+% preface, list of figures, ETC. for this template we will 
+% only create a title and author name with `\maketitle'
+%-------------------------------------------------------------
+
+\maketitle
+
+\setlength{\parindent}{0em} % Sets indentation of new paragraph
+\setlength{\parskip}{1em} % Sets space between paragraphs
+
+%-------------------------------------------------------------
+% Document Body: Essentially this is where you place the 
+% content of your document. To use this template, just delete
+% all of the text between here and the Bibliography Section.
+% Then type whatever you desire.
+%-------------------------------------------------------------
+
+
+Solutions should be written \LaTeX\ or Markdown and converted to a PDF. You are encouraged to work with others
+on the assignment, but you should write up your own solutions independently. This means no copy pasting. You should
+reference all of your sources, including your collaborators. 
+
+{\it Many proofs use induction, so it will be helpful for you to review induction from
+your discrete/proofs course. Problem 1 below is intended to help you review proofs using induction.}
+
+\begin{enumerate}
+\item Use induction to prove that the following formula holds for all $n \in \mathbb Z_{n>1}$:
+	\[
+		2 + 4 + 8 + 16 + 32 + \ldots + 2^n = 2^{n+1} - 2.
+	\]
+
+\item Show that the set $\mathbb Z [\sqrt{-5}] = \{ a + b \sqrt{-5}\; |\; a,b \in \mathbb Z \}$ is closed under addition and multiplication.
+
+\item Compute the greatest common divisor $\gcd(455,1235)$ by hand.
+
+\item Let $a,b,c,n$ be integers.  Prove that
+\begin{enumerate}
+\item if $a \mid n$ and $b\mid n$ with $\gcd(a,b)=1$, then $ab\mid n$.
+\item if $a\mid bc$ and $\gcd(a,b)=1$, then $a\mid c$.
+\end{enumerate}
+
+\item
+In each of the following, apply the division algorithm
+to find $q$ and $r$ such that
+$a = bq + r$ and $0\leq r < |b|$:
+$$
+ a=300, b=17,\,\,
+a=729,b=31,\,\,
+a=300,b=-17,\,\,
+a=389,b=4.
+$$
+
+\item Prove that a positive integer $n$ is prime if
+and only if $n$ is not divisible by any prime $p$
+with $1 < p \leq \sqrt{n}$.
+
+
+
+\end{enumerate}
+
+
+
+
+
+\end{document}

@@ -1,0 +1,83 @@
+%  Created by Branden Stone on 2015-01-15.
+%  Copyright (c) 2015 Branden Stone. All rights reserved.
+%--------------------------------------------------------
+\documentclass{article}
+
+
+%---------------------------
+% Packages
+%---------------------------
+\usepackage{amssymb, amsmath, latexsym, amsfonts, amsthm, mathrsfs} % Standard packages that are nice to have.
+\usepackage{amsrefs} % Allows for easy referencing and citations.
+\usepackage{verbatim} % Needed for \begin{comment} \end{comment}.
+\usepackage[text={6in,9in},centering]{geometry} % Defines the dimensions of the text body.
+\usepackage[colorlinks=true]{hyperref} % Allows for use of hyperlinks.
+%\usepackage[doublespacing]{setspace} % Makes the document double spaced.
+\usepackage[pdftex]{graphicx} % Allows for \includegraphics
+\usepackage{enumerate} % Allows for easy modification of lists
+
+\renewcommand{\arraystretch}{1.5}
+
+%----------------------------
+% Title and Author
+%----------------------------
+
+\title{Math 351 Homework 3}
+\author{Due Wednesday, September 28}
+\date{}
+
+
+%----------------------------
+% Main Document Body
+%----------------------------
+
+\begin{document}
+
+
+%-------------------------------------------------------------
+% Front Matter: This is where you can add a table of contents,
+% preface, list of figures, ETC. for this template we will 
+% only create a title and author name with `\maketitle'
+%-------------------------------------------------------------
+
+\maketitle
+
+\setlength{\parindent}{0em} % Sets indentation of new paragraph
+\setlength{\parskip}{1em} % Sets space between paragraphs
+
+%-------------------------------------------------------------
+% Document Body: Essentially this is where you place the 
+% content of your document. To use this template, just delete
+% all of the text between here and the Bibliography Section.
+% Then type whatever you desire.
+%-------------------------------------------------------------
+
+
+Solutions should be written \LaTeX\ or Markdown and converted to a PDF. You are encouraged to work with others on the assignment, but you should write up your own solutions independently. This means no copy pasting. You should reference all of your sources, including your collaborators. 
+
+\begin{enumerate}
+
+\item Let $n \in \mathbb N$ and $x \in \mathbb Z$ and suppose that $\gcd(x, n) = 1$. The {\bf order} of $x$ modulo $n$ is the smallest $m \in \mathbb N$ such that$x^m=1 \pmod n$. What is the order of~$2$ modulo $17$?
+
+\item Let~$p$ be a prime.  Prove that $\mathbb Z / p \mathbb Z$ is a field.
+
+\item Show that multiplication in $\mathbb Z / p \mathbb Z$ is well-defined. 
+
+\item Use Wilson's Theorem (Proposition 2.1.22) to prove that if $n>4$ is composite then
+	$$
+	   (n-1)! \equiv 0 \pmod{n}.
+	$$
+
+\item Euler's $\varphi$ function is defined as follows: for $n \in \mathbb N$, let 
+\[
+  \varphi(n)=|\{a\in \mathbb N\; | \; a \leqslant n \text{ and  }\gcd(a,n)=1\}|.
+\] 
+For what values of~$n$ is $\varphi(n)$ odd?
+
+\end{enumerate}
+
+
+
+
+
+\end{document}

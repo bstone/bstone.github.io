@@ -1,0 +1,365 @@
+<!DOCTYPE html>
+<html>
+
+  <head>
+    <meta charset="utf-8">
+    <meta name="viewport" content="width=device-width">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+
+    <title>HW 4</title>
+    <meta name="description" content="Website for Branden Stone, Visiting Assistant Professor of Mathematics at Hamilton College. Research interests are in Commutative Algebra,  Macaulay2, and various programming projects. 
+">
+
+    <link rel="stylesheet" href="/bstone/css/main.css">
+    <link rel="canonical" href="http://localhost:4000/bstone/teaching/math243/hw-problems/stewart-hw-spring-2015/2015/01/30/hw04.html">
+
+    <script type="text/x-mathjax-config">
+    MathJax.Hub.Config({
+      jax: ["input/TeX", "output/HTML-CSS"],
+      tex2jax: {
+        inlineMath: [ ['$', '$'], ["\\(", "\\)"] ],
+        displayMath: [ ['$$', '$$'], ["\\[", "\\]"] ],
+        processEscapes: true,
+        skipTags: ['script', 'noscript', 'style', 'textarea', 'pre', 'code']
+      }
+      //,
+      //displayAlign: "left",
+      //displayIndent: "2em"
+    });
+</script>
+<!--<script src="http://cdn.mathjax.org/mathjax/latest/MathJax.js?config=TeX-AMS_HTML" type="text/javascript"></script>-->
+
+<script type="text/javascript" async
+  src="https://cdnjs.cloudflare.com/ajax/libs/mathjax/2.7.1/MathJax.js?config=TeX-MML-AM_CHTML">
+</script>
+</head>
+
+
+  
+
+  <body>
+    
+      <header class="site-header">
+
+  <div class="wrapper">
+
+    <a class="site-title" href="/bstone/teaching/">Math 142 :: Calculus II</a> <!--- CHANGE THIS  -->
+
+    <nav class="site-nav">
+      <a href="#" class="menu-icon">
+        <svg viewBox="0 0 18 15">
+          <path fill="#424242" d="M18,1.484c0,0.82-0.665,1.484-1.484,1.484H1.484C0.665,2.969,0,2.304,0,1.484l0,0C0,0.665,0.665,0,1.484,0 h15.031C17.335,0,18,0.665,18,1.484L18,1.484z"/>
+          <path fill="#424242" d="M18,7.516C18,8.335,17.335,9,16.516,9H1.484C0.665,9,0,8.335,0,7.516l0,0c0-0.82,0.665-1.484,1.484-1.484 h15.031C17.335,6.031,18,6.696,18,7.516L18,7.516z"/>
+          <path fill="#424242" d="M18,13.516C18,14.335,17.335,15,16.516,15H1.484C0.665,15,0,14.335,0,13.516l0,0 c0-0.82,0.665-1.484,1.484-1.484h15.031C17.335,12.031,18,12.696,18,13.516L18,13.516z"/>
+        </svg>
+      </a>
+
+      <div class="trigger">
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+            <!--- CHANGE THIS  -->
+          <a class="page-link" href="/bstone/teaching/math142/">Assignments</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+            <!--- CHANGE THIS  -->
+          <a class="page-link" href="/bstone/teaching/math140/resources/">Resources</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+            <!--- CHANGE THIS  -->
+          <a class="page-link" href="/bstone/teaching/math142/calendar/">Calendar</a>
+          
+        
+            <!--- CHANGE THIS  -->
+          <a class="page-link" href="/bstone/teaching/math142/resources/">Resources</a>
+          
+        
+            <!--- CHANGE THIS  -->
+          <a class="page-link" href="/bstone/teaching/math142/syllabus/">Syllabus</a>
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+          
+        
+      </div>
+    </nav>
+
+  </div>
+
+</header>
+
+    
+
+    <div class="page-content">
+      <div class="wrapper">
+        <div class="post">
+
+  <header class="post-header">
+    <h1 class="post-title">HW 4</h1>
+    <p class="post-meta">Jan 30, 2015</p>
+  </header>
+
+  <article class="post-content">
+    <p>Write your solutions on your own paper and turn them in on the due date.</p>
+
+<p>Work the following exercises from the book,</p>
+
+<ul>
+  <li>Page 373: 11-14, 21-25, 32</li>
+</ul>
+
+<iframe width="560" height="315" src="https://www.youtube.com/embed/ahcCegzxPqM" frameborder="0" allowfullscreen=""></iframe>
+
+<p><br /><br /></p>
+
+<h1 id="solution-to-number-21"><strong>Solution to number 21</strong></h1>
+
+<p>Let $f(x) = \int_0^x (1-t^2)e^{t^2} dt$. The first thing to notice is that $(1-t^2)e^{t^2}$ is a product of continuous functions on $[0,\infty )$. So we can immediately apply the fundamental theorem of calculus to get that $f’(x) = (1-x^2)e^{x^2}$. Since we are wanting to know when $f(x)$ is increasing, we need to find when $f’(x)$ is positive. To do this, we realize that $f’(x)$ determines the slope of tangent lines at each point in the domain of $f’(x)$. Thus the critical points (or the points where the slope is zero) partition the domain of $f’(x)$. To find these points, we set $f’(x) = 0$ and solve for $x$. Since $e^{x^2}&gt;0$, we can ignore it and only consider $x$ when $1-x^2 = 0$. This happens when $x=-1,1$. These points partition the domain into three intervals, $(-\infty,-1)$, $(-1,1)$, and $(1,\infty)$.  Testing values of $f’(x)$ in each of these intervals shows that $f’(x)&gt;0$ when $-1&lt;x&lt;1$. Hence $f(x)$ is increasing on $(-1,1)$.</p>
+
+<h1 id="solution-to-number-32"><strong>Solution to number 32</strong></h1>
+
+<p><strong>Part (a).</strong> First let $C(t) = \frac 1 t \int_0^t [f(s)+g(s)] ds$. If we assume that $f(s)$ and $g(s)$ are continuous, we can use the product rule to show that</p>
+
+<script type="math/tex; mode=display">C'(t) = \frac{-1}{t^{2}} \int_0^t [f(s)+g(s)] ds + \frac 1 t \left(f(t)+g(t)\right) = \frac{t \left(f(t)+g(t)\right) - \int_0^t [f(s)+g(s)] ds}{t^2}.</script>
+
+<p>The critical numbers are when the numerator of $C’(t) = 0$. That is when</p>
+
+<script type="math/tex; mode=display">t \left(f(t)+g(t)\right) - \int_0^t [f(s)+g(s)] ds = 0.</script>
+
+<p>A simple manipulation shows that this happens when</p>
+
+<script type="math/tex; mode=display">f(t)+g(t) = \frac 1 t \int_0^t [f(s)+g(s)] ds = C(t).</script>
+
+<p><strong>Part (b).</strong> Suppose that</p>
+
+<script type="math/tex; mode=display">% <![CDATA[
+f(t) = \begin{cases} \frac V {15} - \frac V {450}t & \text{if } 0<t \leqslant 30  \\ 0 & \text{if } t >30 \end{cases} %]]></script>
+
+<p>We would like to know the time $T$ when $D(T) = \int_0^T f(s) ds$ is the same as $V$. Since the value of $D(t)$ is constant for $t&gt;30$, we can ignore them and assume that $0 &lt; T \leqslant 30$.   So we have that</p>
+
+<script type="math/tex; mode=display">D(T) = \int_0^T \left( \frac V {15} - \frac V {450}s\right) ds = V.</script>
+
+<p>Integrating we see that</p>
+
+<script type="math/tex; mode=display">\frac V {15} T - \frac V {900}T^2 = V.</script>
+
+<p>As $V$ is positive we can eliminate it and obtain the quadratic equation</p>
+
+<script type="math/tex; mode=display">T^2 -60T+ 900 =0.</script>
+
+<p>Solving for $T$ we see that $T = 30$ months.</p>
+
+<p><strong>Part (c).</strong>  Let $g(t) = \frac{Vt^2}{12,900}$ for $t&gt;0$. We want to find the absolute minimum of $C(t)$ on the interval $(0,30]$. Notice that</p>
+
+<script type="math/tex; mode=display">C(t) = \frac 1 t \int_0^t \left( \frac V {15} - \frac V {450}s + \frac{V}{12,900}s^2 \right) ds.</script>
+
+<p>By Part (a), we need only find the value of $t$ such that $C(t) = f(t)+g(t)$. That is we want to know what values of $t$ satisfy</p>
+
+<script type="math/tex; mode=display">\frac 1 t \int_0^t \left( \frac V {15} - \frac V {450}s + \frac{V}{12,900}s^2 \right) ds = \frac V {15} - \frac V {450}t + \frac{V}{12,900}t^2.</script>
+
+<p>Multiplying both sides by $t$ and integrating we see that</p>
+
+<script type="math/tex; mode=display">\frac V {15}t - \frac V {900}t^2 + \frac{V}{38,700}t^3  = \frac V {15}t - \frac V {450}t^2 + \frac{V}{12,900}t^3.</script>
+
+<p>Eliminating the $V$ and rearranging gives</p>
+
+<script type="math/tex; mode=display">t^2(2t - 43) =0.</script>
+
+<p>Hence the only critical point is when $t = 43/2$ (we can ignore $t=0$ because it is not in the domain). The last thing we need to do test to see if it is an absolute minimum. Since the above equation represents the behavior of $C’(t)$, we know that $t = 43/2$ is indeed a minimum. Since it is the only extremal value, it must be an absolute minimum on $(0,30]$.</p>
+
+<p><strong>Part (d).</strong> Here is the graph. The blue graph is $f(t)+g(t)$, the red graph is $C(t)$, and the orange line is the line marking $t = 43/2$. Notice that this point is indeed a minimum of $C(t)$, and that $C(t) = f(t)+g(t)$ at this point.</p>
+
+<p><img class="img-responsive" src="http://math.adelphi.edu/~bstone/teaching/math142/docs/hw04-graph.png" width="520px" /></p>
+
+
+  </article>
+
+</div>
+
+      </div>
+    </div>
+
+    <footer class="site-footer">
+
+  <div class="wrapper">
+
+    <h2 class="footer-heading">Contact Information</h2>
+
+    <div class="footer-col-wrapper">
+      <div class="footer-col  footer-col-1">
+        <ul class="contact-list">
+          <li>Branden Stone</li>
+          <li>CJ 107</li>
+          <li>×4551</li>
+          <li><a href="mailto:bstone@hamilton.edu">bstone@hamilton.edu</a></li>
+        </ul>
+       <ul class="social-media-list">
+          
+          <li>
+            <a href="https://github.com/b-stone">
+              <span class="icon  icon--github">
+                <svg viewBox="0 0 16 16">
+                  <path fill="#828282" d="M7.999,0.431c-4.285,0-7.76,3.474-7.76,7.761 c0,3.428,2.223,6.337,5.307,7.363c0.388,0.071,0.53-0.168,0.53-0.374c0-0.184-0.007-0.672-0.01-1.32 c-2.159,0.469-2.614-1.04-2.614-1.04c-0.353-0.896-0.862-1.135-0.862-1.135c-0.705-0.481,0.053-0.472,0.053-0.472 c0.779,0.055,1.189,0.8,1.189,0.8c0.692,1.186,1.816,0.843,2.258,0.645c0.071-0.502,0.271-0.843,0.493-1.037 C4.86,11.425,3.049,10.76,3.049,7.786c0-0.847,0.302-1.54,0.799-2.082C3.768,5.507,3.501,4.718,3.924,3.65 c0,0,0.652-0.209,2.134,0.796C6.677,4.273,7.34,4.187,8,4.184c0.659,0.003,1.323,0.089,1.943,0.261 c1.482-1.004,2.132-0.796,2.132-0.796c0.423,1.068,0.157,1.857,0.077,2.054c0.497,0.542,0.798,1.235,0.798,2.082 c0,2.981-1.814,3.637-3.543,3.829c0.279,0.24,0.527,0.713,0.527,1.437c0,1.037-0.01,1.874-0.01,2.129 c0,0.208,0.14,0.449,0.534,0.373c3.081-1.028,5.302-3.935,5.302-7.362C15.76,3.906,12.285,0.431,7.999,0.431z"/>
+                </svg>
+              </span>
+
+              <span class="username">b-stone</span>
+            </a>
+          </li>
+          
+
+          
+        </ul>
+
+
+      </div>
+
+      <div class="footer-col  footer-col-2">
+      Office Hours (Fall 2019)
+        <ul class="contact-list">
+          <li>M 10:00am - 12:00pm</li>
+          <li>T none</li>
+          <li>W 10:00am - 12:00pm</li>
+          <li>R 2:00pm - 4:00pm</li>          
+          <li>F none</li>                    
+        </ul>      
+      </div>
+
+      <div class="footer-col  footer-col-3">
+        <p class="text">
+          <a href="https://www.hamilton.edu/academics/departments/Home?dept=Mathematics">Dept of Mathematics</a><br>
+          <a href="https://www.hamilton.edu/">Hamilton College</a><br>
+          198 College Hill Road <br>
+          Clinton, NY 13323
+        </p>
+      </div>
+    </div>
+
+  </div>
+
+</footer>
+
+
+    <!-- Default Statcounter code for Hamilton Personal Site
+    http://people.hamilton.edu/bstone/ -->
+    <script type="text/javascript">
+    var sc_project=11772906; 
+    var sc_invisible=1; 
+    var sc_security="027de8c3"; 
+    </script>
+    <script type="text/javascript"
+    src="https://www.statcounter.com/counter/counter.js"
+    async></script>
+    <noscript><div class="statcounter"><a title="Web Analytics
+    Made Easy - StatCounter" href="http://statcounter.com/"
+    target="_blank"><img class="statcounter"
+    src="//c.statcounter.com/11772906/0/027de8c3/1/" alt="Web
+    Analytics Made Easy - StatCounter"></a></div></noscript>
+    <!-- End of Statcounter Code -->
+
+  </body>
+
+</html>

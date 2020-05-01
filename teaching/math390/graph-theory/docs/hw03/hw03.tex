@@ -1,0 +1,105 @@
+%  Created by Branden Stone on 2015-01-15.
+%  Copyright (c) 2015 Branden Stone. All rights reserved.
+%--------------------------------------------------------
+\documentclass{article}
+
+
+%---------------------------
+% Packages
+%---------------------------
+\usepackage{amssymb, amsmath, latexsym, amsfonts, amsthm, mathrsfs} % Standard packages that are nice to have.
+\usepackage{amsrefs} % Allows for easy referencing and citations.
+\usepackage{verbatim} % Needed for \begin{comment} \end{comment}.
+\usepackage[text={6in,9in},centering]{geometry} % Defines the dimensions of the text body.
+\usepackage[colorlinks=true]{hyperref} % Allows for use of hyperlinks.
+%\usepackage[doublespacing]{setspace} % Makes the document double spaced.
+\usepackage[pdftex]{graphicx} % Allows for \includegraphics
+\usepackage{enumerate} % Allows for easy modification of lists
+
+\renewcommand{\arraystretch}{1.5}
+
+%----------------------------
+% Title and Author
+%----------------------------
+
+\title{Math 390 Homework 3}
+\author{Due Wednesday, February 17}
+\date{}
+
+
+%----------------------------
+% Main Document Body
+%----------------------------
+
+\begin{document}
+
+
+%-------------------------------------------------------------
+% Front Matter: This is where you can add a table of contents,
+% preface, list of figures, ETC. for this template we will 
+% only create a title and author name with `\maketitle'
+%-------------------------------------------------------------
+
+\maketitle
+
+\setlength{\parindent}{0em} % Sets indentation of new paragraph
+\setlength{\parskip}{1em} % Sets space between paragraphs
+
+%-------------------------------------------------------------
+% Document Body: Essentially this is where you place the 
+% content of your document. To use this template, just delete
+% all of the text between here and the Bibliography Section.
+% Then type whatever you desire.
+%-------------------------------------------------------------
+
+
+Solutions should be written \LaTeX\ or Markdown and converted to a PDF. You are encouraged to work with others
+on the assignment, but you should write up your own solutions independently. This means no copy pasting. You should
+reference all of your sources, including your collaborators. 
+
+\begin{enumerate}
+
+\item Let $G$ be a weighted graph with 7 vertices $a$, $b$, $c$, $d$, $e$, $f$, $g$ and one edge between every pair of vertices. For each edge, the weight is given by the following table:
+
+\[
+\begin{array}{c||c|c|c|c|c|c|c|}
+  & a & b & c & d & e & f & g \\
+\hline \hline
+a & 0 & 20 & 27 & 51 & 40 & 25 & 46 \\
+\hline  
+b & 20 & 0 & 22 & 44 & 30 & 34 & 52 \\
+\hline   
+c & 27 & 22 & 0 & 42 & 15 & 10 & 53 \\
+\hline 
+d & 51 & 44 & 42 & 0 & 50 & 37 & 57 \\
+\hline 
+e & 40 & 30 & 15 & 50 & 0 & 17 & 55 \\
+\hline  
+f & 25 & 34 & 10 & 37 & 17 & 0 & 54 \\
+\hline   
+g & 46 & 52 & 53 & 57 & 55 & 54 & 0 \\
+\hline    
+\end{array}
+\]
+
+Find a minimum weight spanning tree for $G$.
+
+\item  (Exercise 5.10/2.44)
+	\begin{enumerate}
+		\item Let $G$ be a simple graph on $2k$ vertices containing no triangles. Show, by induction on $k$, that $G$ has at most $k^2$ edges. (This result is often called Tur\'an’s extremal theorem.)
+		\item Give examples of graphs with 4 vertices, 6 vertices, and 8 vertices for which this upper bound is achieved.
+	\end{enumerate}
+
+\item Prove that a knight {\bf cannot} visit all the squares of a $7 \times 7$ chessboard exactly once using knight’s moves and ending in the same square it started.
+
+\item (Exercise 7.9/2.53) Let $G$ be a Hamiltonian graph and let $S$ be any set of $k$ vertices in $G$. Prove that the graph $G\setminus S$ has at most $k$ components. (Hint: First prove that this holds if $G$ is a cycle.)
+
+\item Four people must cross a canyon at night on a fragile bridge. At most two people can be on the bridge at once. Crossing requires carrying a flashlight, and there is only one flashlight (which can cross only by being carried). Alone, the four people cross in 10, 5, 2, 1 minutes, respectively. When two cross together, they move at the speed of the slower person. In 18 minutes, a flash flood coming down the canyon will wash away the bridge. Can the four people get across in time? Prove your answer.
+
+\end{enumerate}
+
+
+
+
+
+\end{document}

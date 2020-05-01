@@ -1,0 +1,216 @@
+%  Created by Branden Stone on 2015-01-15.
+%  Copyright (c) 2015 Branden Stone. All rights reserved.
+%--------------------------------------------------------
+\documentclass{amsart}
+
+
+%---------------------------
+% Packages
+%---------------------------
+\usepackage{amssymb, amsmath, latexsym, amsfonts, amsthm, mathrsfs} % Standard packages that are nice to have.
+\usepackage{amsrefs} % Allows for easy referencing and citations.
+\usepackage{verbatim} % Needed for \begin{comment} \end{comment}.
+\usepackage[text={6in,9in},centering]{geometry} % Defines the dimensions of the text body.
+\usepackage[colorlinks=true]{hyperref} % Allows for use of hyperlinks.
+\usepackage[doublespacing]{setspace} % Makes the document double spaced.
+
+
+%----------------------------
+% Title and Author
+%----------------------------
+
+\title{Math 142 \LaTeX\ Template}
+\author{Your Name Here}
+
+%----------------------------
+% Main Document Body
+%----------------------------
+
+\begin{document}
+	
+%-------------------------------------------------------------
+% Front Matter: This is where you can add a table of contents,
+% preface, list of figures, ETC. for this template we will 
+% only create a title and author name with `\maketitle'
+%-------------------------------------------------------------
+
+\maketitle
+
+	
+%-------------------------------------------------------------
+% Document Body: Essentially this is where you place the 
+% content of your document. To use this template, just delete
+% all of the text between here and the Bibliography Section.
+% Then type whatever you desire.
+%-------------------------------------------------------------
+
+\section{Introduction} % This defines the sections
+
+   This document is meant to be a template to use for writing projects in Math 142. I will give a few tips and tricks on using \LaTeX\ here and in class, but for the most part you will be on your own when it comes to learning how to use it. The great thing about using \LaTeX\ is that it only will do what you tell it to do. The bad part about using \LaTeX\ is that it only will do what you tell it to do. That is, it can be a pain to find errors. It has a steep learning curve, but once you gain the basics, it will greatly help you in future classes. 
+
+
+
+
+
+
+
+
+% Indenting and spacing your text means nothing. 
+% I only do it because I like how it looks in the TEX file. 
+% It does not effect the PDF.
+
+In Section \ref{math}, I will give a few examples on how to use the math environment. In Section \ref{refs}, I talk about citing references. And in Section \ref{more}, I list some resources.  
+
+
+
+
+
+
+
+   First off, I want to explain a little about how to use \LaTeX. There are many files associated to your document, but there are only two you should be concerned with. They are the `.tex' file and the `.pdf' file. The TEX file is what you write in and the PDF is what you send to people.  Basically \LaTeX\ allows you to generate your own PDFs. 
+
+   While creating the PDF from the TEX file can be done locally on your machine, I suggest you first use some sort of online utility. I recommend one of the following:
+   \begin{enumerate}
+      \item \url{https://www.sharelatex.com}
+      \item \url{https://www.overleaf.com}
+   \end{enumerate}
+   Both of these sites require you to upload files in a compressed format. You should be able to find a ZIP file of this document on my webpage.  
+
+   I hope you have fun with this and feel free to ask me or the writing assistant if you have any questions.
+
+
+
+\section{Using Math Environment} \label{math} 
+% The labels can be anything you like! 
+% This allows you to reference a section or comment without 
+% having to figure out what number it is.  LaTeX will keep 
+% track for you.
+
+
+   When inputing an equation or variable in a paragraph, we use the single dollar sign, `\verb|$|'. For example, writing a function might look like this, \verb|$f(x) = 2x^3-4x+2$|. When you compile the expression will look like this in the PDF, $f(x) = 2x^3-4x+2$. This allows us to quickly write complex expressions without the need for a special editor.
+
+   If you are wanting to create a centered math expression, you can use the double dollar sign, `\verb|$$|', or use open and closed brackets `\verb|\[...\]|'. For example, you could write
+      \begin{center}
+         \verb|$$\lim_{x\to -1} \frac{x^2-1}{x+1}$$|
+      \end{center}
+   or you could use
+      \begin{center} 
+         \begin{verbatim}
+         \[
+            \lim_{x\to -1} \frac{x^2-1}{x+1}
+         \]         
+         \end{verbatim}
+      \end{center}
+   Both expressions will give you the desired result.  That is you will see this with the dollar sign, 
+   $$\lim_{x\to -1} \frac{x^2-1}{x+1},$$
+   and this with the brackets,
+      \[
+          \lim_{x\to -1} \frac{x^2-1}{x+1}.
+      \]     
+
+
+   I would like to mention one formating concern. Let's say I want to write the above expression in a paragraph, and not centered. Then I would just write \verb|$\lim_{x\to -1} \frac{x^2-1}{x+1}$| to get $\lim_{x\to -1} \frac{x^2-1}{x+1}$. Notice that it does not look like it did when we centered it. This is because we are putting it into a small space in the paragraph. But we can override this. Just use the command \verb|\displaystyle| in the dollar signs like this, \verb|$\displaystyle \lim_{x\to -1} \frac{x^2-1}{x+1}$|. Now your expression should look like this, $\displaystyle \lim_{x\to -1} \frac{x^2-1}{x+1}$.
+
+
+   Sometimes it is nice to place several mathematical expressions on multiple lines. For this we can use the \verb|align| environment. We can use it as follows.
+   \begin{verbatim}
+   \begin{align*}
+      \lim_{x\to -1} \frac{x^2-1}{x+1} & = \lim_{x\to -1} \frac{(x-1)(x+1)}{x+1} \\
+         &= \lim_{x\to -1} x-1 \\
+         & = -2.
+   \end{align*}
+   \end{verbatim}
+   The output of this will look like this.
+   \begin{align*}
+      \lim_{x\to -1} \frac{x^2-1}{x+1} & = \lim_{x\to -1} \frac{(x-1)(x+1)}{x+1} \\
+         &= \lim_{x\to -1} x-1 \\
+         & = -2.
+   \end{align*}
+   Notice that the \verb|&| force the equal signs to line up and the \verb|\\| define the new line. 
+
+
+
+   There are lots of other things to learn here, but this should get you started. For more commands and tricks see the resources in Section \ref{more}.
+
+   
+
+\section{Citing References} \label{refs}
+
+   Citing other peoples results is a very important part in any discipline. \LaTeX\ makes this process extremely easy once you get familiar with the process. Basically you just list the attributes of the document you wish to cite, and \LaTeX\ does the rest. For example, if I wanted to cite our textbook, I would place the following in the Bibliography Section of the TEX file.
+
+   \begin{verbatim}  
+      \bib{calcbook}{book}{
+         author={Stewart, James},
+         title={Calculus: Concepts and Contexts},
+         edition={4th},
+         publisher={Cengage Learning},
+         date={2009},
+         pages={1152},
+         isbn={0495557420},
+         isbn={978-0495557425},
+      }
+   \end{verbatim}
+
+   Notice I called the reference `calcbook'. I could have put anything here. When I want to cite the book I just write `\verb|\cite{calcbook}|', and \LaTeX\ will create the reference and link to it in the PDF. For example, we will be using \cite{calcbook} as our textbook for the semester.  Or you could even look at particular theorems of the book. For instance, \cite{calcbook}*{Theorem 2.7} is pretty cool.
+
+   If we wanted to cite an article, all we have to do is list it in the Bibliography Section and then cite it when you want. For example, you could look at \cite{supercoolarticle} in the TEX file as an example. 
+
+   If you don't know a particular item in the list, you don't have to include it. For example, if I did not know the number of pages of a text, I can leave that information out of the list in \verb|\bib| citation. In fact, Mathematics does not have any formal MLA type of style guide. The only purpose for citations is so that someone can find the article you are referencing. So you just need to be clear. 
+
+   A nice place to find references is MathSciNet. You can get there through the following link. I will talk more about this in class: \url{http://www.ams.org.libproxy.adelphi.edu:2048/mathscinet/}.
+
+
+
+\section{More Resources} \label{more}
+
+
+   There is a lot to learn about \LaTeX, but I hope this will get you started. I you are stuck I recommend the following resources.
+   \begin{enumerate}
+      \item \url{http://www.google.com}
+      \item \url{https://tobi.oetiker.ch/lshort/lshort.pdf}
+   \end{enumerate}
+   The first reference is not a joke. If you get stuck on anything pertaining to \LaTeX, just google it. That should be your first instinct\footnote{This should be your first instinct when dealing with \LaTeX\ problem. This should NOT be your first instinct with actually working the math problems.}. The second reference is an nice walk through of what \LaTeX\ can do. 
+
+%---------------------------------------------------
+% This is the beginning of the bibliography section.
+% Here is where you list your references and then
+% when you compile LaTeX will make it look pretty.
+% the best way to write up your references is to 
+% use the website http://www.ams.org/mathscinet/
+% This process will be talked more about in class.
+%---------------------------------------------------
+
+\begin{bibdiv}
+\begin{biblist}
+
+\bib{calcbook}{book}{
+   author={Stewart, James},
+   title={Calculus: Concepts and Contexts},
+   edition={4th},
+   publisher={Cengage Learning},
+   date={2009},
+   pages={1152},
+   isbn={0495557420},
+   isbn={978-0495557425},
+}
+
+\bib{supercoolarticle}{article}{
+   author={Stone, Branden},
+   title={Super-stretched and graded countable Cohen-Macaulay type},
+   journal={J. Algebra},
+   volume={398},
+   date={2014},
+   pages={1--20},
+   issn={0021-8693},
+   review={\MR{3123751}},
+   doi={10.1016/j.jalgebra.2013.09.017},
+}
+
+\end{biblist}
+\end{bibdiv}
+
+\end{document}
+
+  
+
+
